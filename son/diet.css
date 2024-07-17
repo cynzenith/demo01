@@ -1,3 +1,14 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* 원하는 기본 글꼴 설정 */
+}
+
 .list-group {
     display: flex;
     flex-direction: row;
