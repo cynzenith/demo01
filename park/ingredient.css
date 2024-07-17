@@ -1,0 +1,69 @@
+.header-line {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.header-line img {
+    width: 300px;
+}
+
+.RecipeTypes {    
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                 /* 창 크기에 따라 범위 안에 있도록 감싸준다. 즉, 창크기가 작아지면 한줄 메뉴가 2~3줄로 줄어들면서 감싼다 */
+    border-top:1px solid #ebebeb;
+    padding-top: 5px;
+}
+
+.Ingredients {    
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                 /* 창 크기에 따라 범위 안에 있도록 감싸준다. 즉, 창크기가 작아지면 한줄 메뉴가 2~3줄로 줄어들면서 감싼다 */
+    border-bottom: 4px double black;
+    padding: 5px;
+}
+
+.Ingredients button,
+.RecipeTypes button  {
+    border: none;
+    background: none;  /* 버튼의 배경을 없애 */
+    margin: 5px;
+}
+
+.Ingredients button:hover,
+.RecipeTypes button:hover{
+    background-color: beige;
+}
+
+
+.img-size{
+    max-width: 100%;  
+    max-height: 250px;  
+}
+
+.recipe {
+    border-bottom: 2px solid black;
+}
+
+/* 데스크탑 버전: .menus 표시, #mySidenav 숨기기 */
+@media (min-width: 991px) {
+    .side-bar{
+        display: none;
+    }
+}
+
+/* 모바일 버전: .menus 숨기기, #mySidenav 표시 */
+@media (max-width: 991px) {
+    .menus {
+        display: none;
+    }
+    .side-bar {
+        display: block;
+        width: 0; /* 초기 너비는 0 */
+        margin-right: 35px; /* 검색 아이콘과의 간격 조절 */    
+    }
+}
